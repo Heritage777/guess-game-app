@@ -28,16 +28,16 @@
    
     
     function runGuess() {
-         let result = Math.floor((Math.random() * 10) + 1)
-         console.log(result);
+    let result = Math.floor((Math.random() * 10) + 1)
+    console.log(result);
         if (+userInput.value === result) {
-            userOutput.innerHTML = `Correct Answer: ${result}, You Won!`
+         userOutput.innerHTML = `Correct Answer: ${result}, You Won!`
         } else{ userOutput.innerHTML = `Wrong Answer! Answer is ${result}. Try Again.`}
     }
 
-        function refreshButton() {
-            userOutput.innerHTML = `Try your luck...`
-            userInput.value = ''
-        }
+    function refreshButton() {
+        userOutput.innerHTML = `Try your luck...`
+        userInput.value = ''
+    }
 
 </script>
